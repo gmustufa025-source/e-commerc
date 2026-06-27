@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Glow Beauty</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<header>
+
+    <div class="container">
+
+        <div class="logo">
+
+            Glow<span>Beauty</span>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="cart.html" class="active">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!--================ PAGE TITLE ================-->
+
+<section class="page-title">
+
+    <div class="container">
+
+        <h1>Shopping Cart</h1>
+
+        <p>Review your selected products before checkout.</p>
+
+    </div>
+
+</section>
+
+<!--================ CART SECTION ================-->
+
+<section class="cart-section">
+
+    <div class="container">
+
+        <table class="cart-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <!-- Product 1 -->
+
+                <tr>
+
+                    <td class="product-info">
+
+                        <img src="images/product1.jpg" alt="">
+
+                        <div>
+
+                            <h4>Vitamin C Serum</h4>
+
+                            <small>Skincare</small>
+
+                        </div>
+
+                    </td>
+
+                    <td>$20</td>
+
+                    <td>
+
+                        <div class="qty-box">
+
+                            <button>-</button>
+
+                            <input type="text" value="1">
+
+                            <button>+</button>
+
+                        </div>
+
+                    </td>
+
+                    <td>$20</td>
+
+                    <td>
+
+                        <button class="remove-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <!-- Product 2 -->
+
+                <tr>
+
+                    <td class="product-info">
+
+                        <img src="images/product4.jpg" alt="">
+
+                        <div>
+
+                            <h4>Matte Lipstick</h4>
+
+                            <small>Makeup</small>
+
+                        </div>
+
+                    </td>
+
+                    <td>$12</td>
+
+                    <td>
+
+                        <div class="qty-box">
+
+                            <button>-</button>
+
+                            <input type="text" value="2">
+
+                            <button>+</button>
+
+                        </div>
+
+                    </td>
+
+                    <td>$24</td>
+
+                    <td>
+
+                        <button class="remove-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================= CART SUMMARY ================= -->
+
+<section class="cart-summary">
+
+    <div class="container summary-container">
+
+        <!-- Coupon -->
+
+        <div class="coupon-box">
+
+            <h2>Apply Coupon</h2>
+
+            <p>Enter your coupon code to get a discount.</p>
+
+            <div class="coupon-form">
+
+                <input type="text" placeholder="Coupon Code">
+
+                <button class="btn">
+
+                    Apply
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Order Summary -->
+
+        <div class="summary-box">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+
+                <span>Subtotal</span>
+
+                <span>$44.00</span>
+
+            </div>
+
+            <div class="summary-row">
+
+                <span>Shipping</span>
+
+                <span>$5.00</span>
+
+            </div>
+
+            <div class="summary-row">
+
+                <span>Tax</span>
+
+                <span>$2.00</span>
+
+            </div>
+
+            <hr>
+
+            <div class="summary-row total">
+
+                <span>Total</span>
+
+                <span>$51.00</span>
+
+            </div>
+
+            <button class="btn checkout-btn">
+
+                Proceed To Checkout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <h2>Subscribe Our Newsletter</h2>
+
+        <p>
+
+            Get exclusive offers and the latest beauty updates.
+
+        </p>
+
+        <form>
+
+            <input type="email" placeholder="Enter Your Email">
+
+            <button class="btn">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>Glow Beauty</h3>
+
+            <p>
+
+                Premium beauty products that bring out your natural glow.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>Email : info@glowbeauty.com</p>
+
+            <p>Phone : +92 300 1234567</p>
+
+            <p>Karachi, Pakistan</p>
+
+        </div>
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Glow Beauty | All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
